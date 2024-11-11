@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranslateIt</title>
+    <!-- Link the CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>TranslateIt</h1>
+        <form action="/" method="POST">
+            <label for="src_text">Enter Text to Translate:</label>
+            <input type="text" name="src_text" id="src_text" required>
+
+            <label for="dest_lang">Enter Destination Language Code (e.g., 'en' for English):</label>
+            <input type="text" name="dest_lang" id="dest_lang" required>
+
+            <button type="submit">Translate</button>
+        </form>
+
+        {% if translation %}
+        <div class="result">
+            <p><strong>Detected Language:</strong> <span>{{ source_lang }}</span></p>
+            <p><strong>Original Text:</strong> <span>{{ translation.origin }}</span></p>
+            <p><strong>Translated Text:</strong> <span>{{ translation.text }}</span></p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

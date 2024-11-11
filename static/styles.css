@@ -1,0 +1,97 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+    background-size: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #444;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.result span {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.4em;
+}
+
+.result p {
+    margin-bottom: 10px;
+}
